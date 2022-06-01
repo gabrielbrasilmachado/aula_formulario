@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+    <link rel="icon" href="./img/favicon.jpeg">
+</head>
+
+<body>
+    <form>
+        <label for="nome">Nome*:</label> <br>
+        <input type="text" placeholder="Digite seu nome:" required id="nome" name="nome"><br>
+
+        <label for="email">E-mail*:</label><br>
+        <input type="email" placeholder="Digite seu e-mail" required id="email" name="email"><br>
+
+        <label for="texto">O que te motivou a participar do evento?</label><br>
+        <textarea placeholder="Digite seu motivo aqui..." name="texto" id="texto" cols="40" rows="5"></textarea><br>
+
+        <label for="modulo">Selecione seu módulo na Kenzie</label><br>
+        <select name="modulo" id="modulo">
+            <option value="">Selecione seu módulo</option>
+            <option value="módulo1">módulo 1</option>
+            <option value="módulo2">módulo 2</option>
+            <option value="módulo3">módulo 3</option>
+            <option value="módulo4">módulo 4</option>
+            <option value="módulo5">módulo 5</option>
+            <option value="módulo6">módulo 6</option>
+        </select><br>
+
+
+        <label for="senha">Digite sua senha*</label><br>
+        <input type="password" id="senha" placeholder="Digite sua senha" name="senha" required><br>
+
+        <label for="confirmarsenha">Confirme sua senha*</label><br>
+        <input type="password" id="confirmarsenha" placeholder="Confirme sua senha" name="confirmarsenha" required><br>
+
+
+        <p>Deseja receber nossos e-mails promocionais?</p>
+        <label for="sim">Sim:</label>
+        <input type="radio" name="receber e-mails" id="sim" value="sim">
+        <label for="não">Não:</label>
+        <input type="radio" name="receber e-mails" id="não" value="não">
+
+        <br><br><button type="submit">Cadastrar</button>
+    </form>
+
+    <p>*campos obrigatórios</p>
+</body>
+
+</html>
